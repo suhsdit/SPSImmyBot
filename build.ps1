@@ -1,8 +1,19 @@
 #Install-Module -Name Configuration -Repository PSGallery -Force
 
-$buildVersion = $env:BUILDVER
+"List all environment variables"
+Get-ChildItem Env: | foreach { "$($_.Name): $($_.Value)" }
+
+"End of environment variables"
+
+"env build ver: $($env:buildVer)"
+
+$buildVersion = $env:buildVer
 $moduleName = 'SPSImmyBot'
-$manifestPath = Join-Path -Path $env:SYSTEM_DEFAULTWORKINGDIRECTORY/$moduleName -ChildPath "$moduleName.psd1"
+$manifestPath = Join-Path -Path $PWD/$moduleName -ChildPath "$moduleName.psd1"
+
+"buildVersion: $buildVersion"
+"manifestPath: $manifestPath"
+"WorkingDir: $PWD"
 
 #Update-Metadata -Path $manifestPath -PropertyName ModuleVersion -Value $buildVersion
 
