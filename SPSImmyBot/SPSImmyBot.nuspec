@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SPSImmyBot</id>
+    <version>0.0.1</version>
+    <authors>Jesse Geron</authors>
+    <owners>Shasta Union High School District</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This module is used to get data from and write data into ImmyBot.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>(c) Jesse Geron. All rights reserved.</copyright>
+    <tags>PSModule PSIncludes_Function PSFunction_Get-ImmyBotApiAuthToken PSFunction_Invoke-ImmyApi PSFunction_New-SPSImmyBotWindowsConfiguration PSFunction_Set-SPSImmyBotConfiguration PSFunction_Set-SPSImmyBotWindowsConfiguration PSCommand_Get-ImmyBotApiAuthToken PSCommand_Invoke-ImmyApi PSCommand_New-SPSImmyBotWindowsConfiguration PSCommand_Set-SPSImmyBotConfiguration PSCommand_Set-SPSImmyBotWindowsConfiguration</tags>
+  </metadata>
+</package>
