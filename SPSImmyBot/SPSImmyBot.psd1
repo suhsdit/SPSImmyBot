@@ -24,7 +24,7 @@ GUID = 'ec1d4109-3ee6-4953-a90b-5c151f858257'
 Author = 'Jesse Geron'
 
 # Company or vendor of this module
-CompanyName = 'Shasta Union High School District'
+CompanyName = 'Jesse Geron'
 
 # Copyright statement for this module
 Copyright = '(c) Jesse Geron. All rights reserved.'
@@ -69,13 +69,20 @@ PowerShellVersion = '5.1'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @(  'Get-ImmyBotApiAuthToken',
+FunctionsToExport = @(  'Get-ImmyAgentStatus',
+                        'Get-ImmyBotApiAuthToken',
+                        'Get-ImmyComputer',
+                        'Get-ImmyComputerDetails',
+                        'Get-ImmyComputerFullReport',
+                        'Get-ImmyComputerInventory',
+                        'Get-ImmyComputerStatus',
+                        'Get-ImmyComputerWindowsVersion',
+                        'Get-ImmyInventoryData',
+                        'Get-ImmyUserAffinities',
                         'Invoke-ImmyApi',
                         'New-SPSImmyBotWindowsConfiguration',
                         'Set-SPSImmyBotConfiguration',
-                        'Set-SPSImmyBotWindowsConfiguration',
-                        'Get-ImmyComputer',
-                        'Get-ImmyComputerDetail'
+                        'Set-SPSImmyBotWindowsConfiguration'
                         )
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
@@ -108,7 +115,7 @@ PrivateData = @{
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = 'https://github.com/suhsdit/SPSImmyBot'
+        # ProjectUri = ''
 
         # A URL to an icon representing this module.
         # IconUri = ''

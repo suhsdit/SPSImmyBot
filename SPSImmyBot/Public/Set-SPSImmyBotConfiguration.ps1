@@ -5,7 +5,7 @@ Function Set-SPSImmyBotConfiguration {
 .DESCRIPTION
     Set the configuration to use for the SPSImmyBot Module
 .EXAMPLE
-    Set-SPSImmyBotConfiguration -Name ConfigName
+    Set-SPSImmyBotConfiguration -Name suhsd
     Set the configuration to Name
 .PARAMETER
 .INPUTS
@@ -15,19 +15,23 @@ Function Set-SPSImmyBotConfiguration {
 #>
     [CmdletBinding()] #Enable all the default paramters, including -Verbose
     Param(
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory=$true,
+            ValueFromPipeline=$true,
+            ValueFromPipelineByPropertyName=$true,
+            # HelpMessage='HelpMessage',
+            Position=0)]
         [String]$Name,
         
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory=$true)]
         [String]$AzureDomain,
         
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory=$true)]
         [String]$ImmyBotSubdomain,
         
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory=$true)]
         [String]$ClientID,
 
-        [Parameter(Mandatory=$false)]
+        [Parameter(Mandatory=$true)]
         [String]$Secret
     )
     Begin{

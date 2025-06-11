@@ -134,14 +134,12 @@ Function Get-ImmyComputer {
             
             if ($DeletedOnly) {
                 $QueryParams += "deletedOnly=true"
-            }
-              if ($PSBoundParameters.ContainsKey('TenantId')) {
+            }              if ($PSBoundParameters.ContainsKey('TenantId')) {
                 $QueryParams += "tenantId=$TenantId"
             }
             
-            if ($PSBoundParameters.ContainsKey('First')) {
-                $QueryParams += "limit=$First"
-            }
+            # Always include the take parameter (uses default value of 10000 if not specified)
+            $QueryParams += "take=$First"
             
             # Build endpoint with query parameters
             $QueryString = $QueryParams -join '&'

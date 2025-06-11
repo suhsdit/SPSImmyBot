@@ -18,6 +18,7 @@ Function New-SPSImmyBotWindowsConfiguration {
         [Parameter(Mandatory=$false,
             ValueFromPipeline=$true,
             ValueFromPipelineByPropertyName=$true,
+            # HelpMessage='HelpMessage',
             Position=0)]
         [String]$Name
     )
@@ -25,6 +26,7 @@ Function New-SPSImmyBotWindowsConfiguration {
     Begin{
         Write-Verbose -Message "Starting $($MyInvocation.InvocationName) with $($PsCmdlet.ParameterSetName) parameterset..."
         Write-Verbose -Message "Parameters are $($PSBoundParameters | Select-Object -Property *)"
+        
     }
     Process{
         # If no users are specified, get all students

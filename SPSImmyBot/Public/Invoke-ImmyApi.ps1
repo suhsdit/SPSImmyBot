@@ -15,19 +15,11 @@ Function Invoke-ImmyApi {
 #>
     [CmdletBinding()] #Enable all the default paramters, including -Verbose
     param(
-        [Parameter(Mandatory=$true,
-            ValueFromPipeline=$true,
-            ValueFromPipelineByPropertyName=$true,
-            Position=0)]
-        [String]$Endpoint,
+        [string]$Endpoint,
     
-        [Parameter(Mandatory=$false,
-            Position=1)]
-        [String]$Method,
+        [string]$Method,
     
-        [Parameter(Mandatory=$false,
-            Position=2)]
-        [Object]$Body
+        $Body
     )
 
     Begin{

@@ -5,7 +5,7 @@ Function Set-SPSImmyBotWindowsConfiguration {
 .DESCRIPTION
     Set the configuration to use for the SPSImmyBot Module
 .EXAMPLE
-    Set-SPSImmyBotWindowsConfiguration -Name ConfigName
+    Set-SPSImmyBotWindowsConfiguration -Name suhsd
     Set the configuration to Name
 .PARAMETER
 .INPUTS
@@ -18,6 +18,7 @@ Function Set-SPSImmyBotWindowsConfiguration {
         [Parameter(Mandatory=$true,
             ValueFromPipeline=$true,
             ValueFromPipelineByPropertyName=$true,
+            # HelpMessage='HelpMessage',
             Position=0)]
         [String]$Name
     )
