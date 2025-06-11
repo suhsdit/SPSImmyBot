@@ -1,0 +1,11 @@
+PSTOPIC
+    about_SPSImmyBot
+
+SHORT DESCRIPTION
+    SPSImmyBot allows you to work with the ImmyBot API through PowerShell functions.
+
+LONG DESCRIPTION
+    SPSImmyBot allows you to work with the ImmyBot API through PowerShell functions.
+
+DETAILED DESCRIPTION
+    SPSImmyBot allows you to work with the ImmyBot API through PowerShell functions.
