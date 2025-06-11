@@ -83,8 +83,8 @@ Function Get-ImmyComputer {
         [switch]$DeletedOnly,
         
         [Parameter(Mandatory=$false)]
-        [ValidateRange(1, 1000)]
-        [int]$First,
+        [ValidateRange(1, 10000)]
+        [int]$First = 10000,
         
         [Parameter(Mandatory=$false)]
         [int]$TenantId
